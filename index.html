@@ -1,120 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Estilos por Ocasião</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galeria de Ocasiões</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      padding: 20px;
-      background: #fdfdfd;
       text-align: center;
     }
-
-    h1 {
-      color: #333;
-      margin-bottom: 20px;
+    nav {
+      margin: 20px;
     }
-
-    /* Menu */
-    .menu {
-      margin-bottom: 40px;
-    }
-
-    .menu button {
-      background-color: #333;
-      color: white;
-      border: none;
+    nav button {
+      margin: 5px;
       padding: 10px 20px;
-      margin: 0 10px;
-      border-radius: 5px;
+      font-size: 16px;
       cursor: pointer;
-      font-size: 16px;
-      transition: background 0.3s;
     }
-
-    .menu button:hover {
-      background-color: #555;
+    section {
+      margin: 50px 0;
     }
-
-    h2 {
-      color: #444;
-      margin-top: 60px;
-      margin-bottom: 20px;
+    .image-container {
+      margin-bottom: 30px;
     }
-
-    .section {
-      margin-bottom: 60px;
-    }
-
-    .gallery {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 40px;
-    }
-
-    .item {
+    img {
       width: 300px;
+      height: auto;
+      border-radius: 8px;
     }
-
-    .item img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #ccc;
-    }
-
-    .caption {
-      margin-top: 12px;
-      font-size: 16px;
-      color: #555;
+    figcaption {
+      margin-top: 10px;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
 
-  <h1>Estilos por Ocasião</h1>
+  <h1>Galeria de Moda por Ocasião</h1>
 
-  <!-- Menu de Navegação -->
-  <div class="menu">
-    <button onclick="document.getElementById('praia').scrollIntoView({behavior: 'smooth'})">Moda Praia</button>
-    <button onclick="document.getElementById('country').scrollIntoView({behavior: 'smooth'})">Moda Country</button>
-  </div>
+  <!-- Botões de navegação -->
+  <nav>
+    <button onclick="location.href='#praia'">Moda Praia</button>
+    <button onclick="location.href='#country'">Moda Country</button>
+  </nav>
 
   <!-- Seção Moda Praia -->
-  <div class="section" id="praia">
+  <section id="praia">
     <h2>Moda Praia</h2>
-    <div class="gallery">
-      <div class="item">
-        <img src="Img1.jpeg" alt="Look moda praia 1">
-        <div class="caption">Look 1 - Praia descontraída</div>
-      </div>
-      <div class="item">
-        <img src="Img2.jpeg" alt="Look moda praia 2">
-        <div class="caption">Look 2 - Estilo leve e fresco</div>
-      </div>
-      <div class="item">
-  <img src="Img3.jpeg" alt="Look moda praia 3">
-  <div class="caption">Look 3 - Estilo verão confortável</div>
-</div>
-
+    <div class="image-container">
+      <figure>
+        <img src="Img1.jpeg" alt="Look praia 1" />
+        <figcaption>Look Praia - Estilo descontraído</figcaption>
+      </figure>
     </div>
-  </div>
+    <div class="image-container">
+      <figure>
+        <img src="Img2.jpeg" alt="Look praia 2" />
+        <figcaption>Look Praia - Versão ousada</figcaption>
+      </figure>
+    </div>
+    <div class="image-container">
+      <figure>
+        <img src="Img3.jpeg" alt="Look praia 3" />
+        <figcaption>Look Praia - Toque tropical</figcaption>
+      </figure>
+    </div>
+  </section>
 
   <!-- Seção Moda Country -->
-  <div class="section" id="country">
+  <section id="country">
     <h2>Moda Country</h2>
-    <div class="gallery">
-      <div class="item">
-        <img src="country1.jpg" alt="Look country 1">
-        <div class="caption">Look 1 - Bota, jeans e atitude</div>
-      </div>
-      <div class="item">
-        <img src="country2.jpg" alt="Look country 2">
-        <div class="caption">Look 2 - Estampa xadrez com charme</div>
-      </div>
+    <div class="image-container">
+      <figure>
+        <img src="Img4.jpeg" alt="Look country 1" />
+        <figcaption>Look Country - Clássico caipira</figcaption>
+      </figure>
     </div>
-  </div>
+    <div class="image-container">
+      <figure>
+        <img src="Img5.jpeg" alt="Look country 2" />
+        <figcaption>Look Country - Estilo sertanejo</figcaption>
+      </figure>
+    </div>
+    <div class="image-container">
+      <figure>
+        <img src="Img6.jpeg" alt="Look country 3" />
+        <figcaption>Look Country - Com toque moderno</figcaption>
+      </figure>
+    </div>
+  </section>
 
 </body>
 </html>
