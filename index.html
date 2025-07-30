@@ -3,32 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Galeria de Ocasiões</title>
+  <title>Galeria de Moda por Ocasião</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
+      margin: 0;
+      padding: 0;
     }
+
+    h1 {
+      margin-top: 30px;
+    }
+
     nav {
-      margin: 20px;
+      margin: 20px 0;
+      flex-wrap: wrap;
     }
+
     nav button {
       margin: 5px;
       padding: 10px 20px;
       font-size: 16px;
       cursor: pointer;
     }
+
     section {
       margin: 50px 0;
     }
-    .image-container {
-      margin-bottom: 30px;
+
+    h2 {
+      margin-bottom: 20px;
     }
-    img {
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    figure {
       width: 300px;
+      margin: 0;
+    }
+
+    img {
+      width: 100%;
       height: auto;
       border-radius: 8px;
     }
+
     figcaption {
       margin-top: 10px;
       font-style: italic;
@@ -43,10 +69,96 @@
   <nav>
     <button onclick="location.href='#praia'">Moda Praia</button>
     <button onclick="location.href='#country'">Moda Country</button>
+    <button onclick="location.href='#urbana'">Moda Urbana</button>
+    <button onclick="location.href='#gala'">Moda Festa de Gala</button>
+    <button onclick="location.href='#fantasia'">Moda Fantasia</button>
   </nav>
 
   <!-- Seção Moda Praia -->
   <section id="praia">
     <h2>Moda Praia</h2>
-    <div class="image-container">
+    <div class="gallery">
       <figure>
+        <img src="Img1.jpeg" alt="Look praia 1" />
+        <figcaption>Look Praia - Estilo descontraído</figcaption>
+      </figure>
+      <figure>
+        <img src="Img2.jpeg" alt="Look praia 2" />
+        <figcaption>Look Praia - Versão ousada</figcaption>
+      </figure>
+      <figure>
+        <img src="Img3.jpeg" alt="Look praia 3" />
+        <figcaption>Look Praia - Toque tropical</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Seção Moda Country -->
+  <section id="country">
+    <h2>Moda Country</h2>
+    <div class="gallery">
+      <figure>
+        <img src="Img4.jpeg" alt="Look country 1" />
+        <figcaption>Look Country - Clássico caipira</figcaption>
+      </figure>
+      <figure>
+        <img src="Img5.jpeg" alt="Look country 2" />
+        <figcaption>Look Country - Estilo sertanejo</figcaption>
+      </figure>
+      <figure>
+        <img src="Img6.jpeg" alt="Look country 3" />
+        <figcaption>Look Country - Com toque moderno</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Seção Moda Urbana -->
+  <section id="urbana">
+    <h2>Moda Urbana</h2>
+    <div class="gallery">
+      <!-- Substitua pelos arquivos reais depois -->
+      <figure>
+        <img src="urbana1.jpg" alt="Look urbano 1" />
+        <figcaption>Look Urbano - Estilo streetwear</figcaption>
+      </figure>
+      <figure>
+        <img src="urbana2.jpg" alt="Look urbano 2" />
+        <figcaption>Look Urbano - Casual moderno</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Seção Moda Festa de Gala -->
+  <section id="gala">
+    <h2>Moda Festa de Gala</h2>
+    <div class="gallery">
+      <!-- Substitua pelos arquivos reais depois -->
+      <figure>
+        <img src="gala1.jpg" alt="Look gala 1" />
+        <figcaption>Gala - Clássico elegante</figcaption>
+      </figure>
+      <figure>
+        <img src="gala2.jpg" alt="Look gala 2" />
+        <figcaption>Gala - Moderno sofisticado</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Seção Moda Festa à Fantasia -->
+  <section id="fantasia">
+    <h2>Moda Festa à Fantasia</h2>
+    <div class="gallery">
+      <!-- Substitua pelos arquivos reais depois -->
+      <figure>
+        <img src="fantasia1.jpg" alt="Look fantasia 1" />
+        <figcaption>Fantasia - Criativa e divertida</figcaption>
+      </figure>
+      <figure>
+        <img src="fantasia2.jpg" alt="Look fantasia 2" />
+        <figcaption>Fantasia - Inspiração temática</figcaption>
+      </figure>
+    </div>
+  </section>
+
+</body>
+</html>
