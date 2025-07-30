@@ -1,31 +1,120 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Look para Praia e Passeios</title>
+  <meta charset="UTF-8">
+  <title>Estilos por Ocasião</title>
   <style>
-    .image-row {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #fdfdfd;
+      text-align: center;
     }
 
-    .image-row img {
-      max-width: 45%;
-      height: auto;
-      border-radius: 8px;
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    /* Menu */
+    .menu {
+      margin-bottom: 40px;
+    }
+
+    .menu button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+
+    .menu button:hover {
+      background-color: #555;
+    }
+
+    h2 {
+      color: #444;
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .item {
+      width: 300px;
+    }
+
+    .item img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+    }
+
+    .caption {
+      margin-top: 12px;
+      font-size: 16px;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>Look para Praia, Lago, Rio e Passeios de Barco</h1>
-  <div class="image-row">
-    <img src="Img1.jpeg" alt="Look vibrante com biquíni vermelho e saia de crochê" />
-    <img src="Img2.jpeg" alt="Look vibrante com biquíni vermelho e saia de crochê - outra variação" />
+
+  <h1>Estilos por Ocasião</h1>
+
+  <!-- Menu de Navegação -->
+  <div class="menu">
+    <button onclick="document.getElementById('praia').scrollIntoView({behavior: 'smooth'})">Moda Praia</button>
+    <button onclick="document.getElementById('country').scrollIntoView({behavior: 'smooth'})">Moda Country</button>
   </div>
-  <p>
-    Look leve e vibrante com biquíni vermelho e saia de crochê, ideal para curtir momentos de lazer à beira da praia, lago, rio, no clube ou em passeios de barco. Combinação perfeita de conforto e estilo para aproveitar o sol com elegância e descontração.
-  </p>
+
+  <!-- Seção Moda Praia -->
+  <div class="section" id="praia">
+    <h2>Moda Praia</h2>
+    <div class="gallery">
+      <div class="item">
+        <img src="Img1.jpeg" alt="Look moda praia 1">
+        <div class="caption">Look 1 - Praia descontraída</div>
+      </div>
+      <div class="item">
+        <img src="Img2.jpeg" alt="Look moda praia 2">
+        <div class="caption">Look 2 - Estilo leve e fresco</div>
+      </div>
+      <div class="item">
+  <img src="Img3.jpeg" alt="Look moda praia 3">
+  <div class="caption">Look 3 - Estilo verão confortável</div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- Seção Moda Country -->
+  <div class="section" id="country">
+    <h2>Moda Country</h2>
+    <div class="gallery">
+      <div class="item">
+        <img src="country1.jpg" alt="Look country 1">
+        <div class="caption">Look 1 - Bota, jeans e atitude</div>
+      </div>
+      <div class="item">
+        <img src="country2.jpg" alt="Look country 2">
+        <div class="caption">Look 2 - Estampa xadrez com charme</div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
